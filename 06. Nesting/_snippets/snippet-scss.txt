@@ -1,0 +1,45 @@
+$border-color: #ccc;
+$dark-gray: #666;
+$light-gray: #efefef;
+
+.wrapper {
+  width:80%;
+  margin:0 auto;
+  font-family: Georgia, "Times New Roman", Serif;
+}
+h1 {
+  font-size: 20px;
+}
+nav {
+  border-bottom: 1px solid $border-color;
+  
+  ul {
+    list-style: none;
+    margin: 0 3%;
+    padding: 0;
+  }
+  
+  li {
+    display: inline-block;
+  }
+  
+  a {
+    background-color: $light-gray;
+    border: 1px solid $border-color;
+    border-bottom-width: 0;
+    color: $dark-gray;
+    display: block;
+    padding: 6px 12px;
+    text-decoration: none;
+    
+    &:hover,
+    &:focus{
+      background-color: $border-color;
+    }
+    &:active{
+      background-color: $dark-gray;
+      border-color:$dark-gray;
+      color: $light-gray;
+    }
+  }
+}

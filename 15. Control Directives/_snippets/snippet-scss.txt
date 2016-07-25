@@ -1,0 +1,45 @@
+$facebook-blue: blue;
+
+%button {
+  background-color: none;
+  border-width: 1px;
+  border-style: solid;
+  display: inline-block;
+  margin: 0 5px;
+  padding: 12px 24px;
+  cursor: pointer;
+}
+@mixin button ($color, $type) {
+  @extend %button;
+  border-color: darken($color, 20%);
+  border-radius: 4px;
+  color: lighten($color, 60%);
+  @if $type == "flat" {
+    background-color: $color;
+    border: none;
+    &:hover {
+        background-color: lighten($color, 10%);
+    }
+  } @else if $type == "glossy" {
+    background-image: linear-gradient(lighten($color, 10%) 50%, darken($color, 10%) 50%);
+    &:hover {
+      background-image: linear-gradient(lighten($color, 15%) 50%, darken($color, 25%) 50%);
+    }
+  } @else if $type == "gradient" {
+    background-image: linear-gradient(lighten($color, 10%), darken($color, 10%));
+    &:hover {
+      background-image: linear-gradient(lighten($color, 20%), darken($color, 20%));
+    }
+  }
+}
+
+button[type="submit"] {
+  @include button(red, flat);
+}
+button[type="reset"] {
+  @include button(#999, glossy);
+}
+button.cancel {
+  @include button($facebook-blue, gradient);
+}
+

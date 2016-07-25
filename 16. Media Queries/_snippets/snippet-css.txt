@@ -1,0 +1,54 @@
+article, aside {
+  background-color: #ccc;
+  margin-bottom: 20px;
+  min-height: 80px;
+  color: #fff;
+  text-align: center;
+  line-height: 80px;
+}
+
+article {
+  width: 100%;
+}
+@media screen and (min-width: 480px) {
+  article {
+    background-color: #999;
+    float: left;
+    width: 70%;
+  }
+}
+@media screen and (min-width: 768px) {
+  article {
+    background-color: #666;
+    width: 60%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  article {
+    background-color: #333;
+    width: 48%;
+  }
+}
+
+aside {
+  width: 100%;
+}
+@media screen and (min-width: 480px) {
+  aside {
+    background-color: #999;
+    float: right;
+    width: 25%;
+  }
+}
+@media screen and (min-width: 768px) {
+  aside {
+    background-color: #666;
+    width: 35%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  aside {
+    background-color: #333;
+    width: 48%;
+  }
+}

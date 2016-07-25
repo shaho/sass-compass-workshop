@@ -1,0 +1,5 @@
+@import "compass";
+
+.hideme {
+  @include hide-text;
+}

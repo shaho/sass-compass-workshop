@@ -1,0 +1,10 @@
+@import "compass";
+
+$default-text-shadow-color: #ccc;
+$default-text-shadow-blur: 0;
+$default-text-shadow-h-offset: 3px;
+$default-text-shadow-v-offset: 4px;
+
+.headline {
+  @include text-shadow;
+}

@@ -1,0 +1,9 @@
+@import "compass";
+
+.box {
+  @include clearfix;
+}
+	
+.other-box {
+  @include pie-clearfix;
+}

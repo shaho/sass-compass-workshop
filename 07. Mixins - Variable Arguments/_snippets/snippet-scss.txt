@@ -1,0 +1,39 @@
+.wrapper {
+  width:80%;
+  margin:0 auto;
+  font-family: Georgia, "Times New Roman", Serif;
+}
+
+h1 {
+  font-size: 20px; 
+}
+
+.box {
+  display: inline-block;
+  height: 100px;
+  margin: 0 10px;
+  width: 100px;
+}
+
+@mixin rounded-corners($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  -o-border-radius: $radius;
+  border-radius: $radius;
+}
+
+.box {
+  background-color: #FF851B;
+  @include rounded-corners(20px);
+}
+
+.box + .box {
+  background-color: #FF4136;
+  @include rounded-corners(10px);
+}
+
+.box + .box + .box {
+  background-color: #85144B;
+  @include rounded-corners(50px);
+}

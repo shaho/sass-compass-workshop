@@ -1,0 +1,19 @@
+span-1 {
+  width: 40px;
+}
+
+span-2 {
+  width: 60px;
+}
+
+span-3 {
+  width: 80px;
+}
+
+span-4 {
+  width: 100px;
+}
+
+span-5 {
+  width: 120px;
+}

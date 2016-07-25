@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/styles.css">
+	<style>
+		.wrapper {
+			display: block;
+			width: 80%;
+			height: 100%;
+			margin: 4em auto;
+		}
+		.inner {
+			padding: 0.5em;
+		}
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+		<h1>@extend Directive</h1>
+		<div class="inner">
+			<p>One issue with using mixins is it can create CSS & HTML that's not very DRY and may bloat your final output. As an alternative you can use the @extend directive, which outputs CSS that is a bit more natural.</p>
+
+			<div class="error">
+			  <p>Something terrible happened with the system and we can't proceed.</p>
+			  <div class="close">x</div>
+			</div>
+
+			<div class="message caution">
+			  <p>Are you sure you want to do whatever you just did? It may not be a good idea..</p>
+			  <div class="close">x</div>
+			</div>
+
+			<div class="message success">
+			  <p>Something great happened. We just wanted to let you know.</p>
+			  <div class="close">x</div>
+			</div>
+		</div><!--end inner-->
+	</div><!--end wrapper-->
+</body>
+</html>

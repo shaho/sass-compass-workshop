@@ -1,0 +1,13 @@
+$size :16px;
+h1 {
+   font: {
+     family: Arial, sans-serif; 
+     size: $size;
+   }
+   .introduction & {
+     font: {
+       family: "monaco", Arial, sans-serif; 
+       size: $size*1.5;
+     }
+   }
+}

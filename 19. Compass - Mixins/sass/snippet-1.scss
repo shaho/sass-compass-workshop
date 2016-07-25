@@ -1,0 +1,6 @@
+@import "compass";
+
+.message {
+  @include background(linear-gradient(#9b9592, #3c3733));
+  @include border-radius(5px);
+}

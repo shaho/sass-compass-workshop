@@ -1,0 +1,19 @@
+.circle{
+  font-family: Georgia, "Times New Roman", Serif;
+  background: yellow;
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  padding: 60px;
+  border-radius: 300px;
+}
+
+h1 {
+  position: relative;
+  bottom: 0.5em;
+}
+
+.div-bottom {
+  height: 37.5px;
+  border-bottom: 4px solid black;
+}

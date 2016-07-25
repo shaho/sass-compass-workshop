@@ -1,0 +1,12 @@
+
+To run Sass from the command line
+-----------------------------------
+sass input.scss output.css
+
+Telling Sass which files to WATCH
+-----------------------------------
+sass --watch screen.scss:screen.css
+
+You can also tell Sass to watch an entire directory
+-----------------------------------
+sass --watch screen.scss:screen.css

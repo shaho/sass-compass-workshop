@@ -1,0 +1,29 @@
+ol {
+  font: 16px/32px Helvetica;
+}
+ol li:first-child span {
+  font-size: 24px;
+}
+ol li:nth-child(2n) span {
+  font-size: 6;
+}
+ol li:nth-child(3) .color-1 {
+  color: red;
+}
+ol li:nth-child(3) .color-2 {
+  color: blue;
+}
+ol li:nth-child(3) .new-color {
+  color: magenta;
+}
+ol li:last-child span {
+  background-color: #666;
+  display: inline-block;
+  height: 25px;
+}
+ol li:last-child .width-1 {
+  width: 25%;
+}
+ol li:last-child .width-2 {
+  width: 66.66667%;
+}

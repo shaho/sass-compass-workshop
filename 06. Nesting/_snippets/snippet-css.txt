@@ -1,0 +1,32 @@
+h1 {
+  font-size: 20px;
+}
+
+nav {
+  border-bottom: 1px solid #cccccc;
+}
+nav ul {
+  list-style: none;
+  margin: 0 3%;
+  padding: 0;
+}
+nav li {
+  display: inline-block;
+}
+nav a {
+  background-color: #efefef;
+  border: 1px solid #cccccc;
+  border-bottom-width: 0;
+  color: #666666;
+  display: block;
+  padding: 6px 12px;
+  text-decoration: none;
+}
+nav a:hover, nav a:focus {
+  background-color: #cccccc;
+}
+nav a:active {
+  background-color: #666666;
+  border-color: #666666;
+  color: #efefef;
+}

@@ -1,0 +1,13 @@
+/* line 3, ../sass/snippet-1.scss */
+.message {
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #9b9592), color-stop(100%, #3c3733));
+  background: -webkit-linear-gradient(#9b9592, #3c3733);
+  background: -moz-linear-gradient(#9b9592, #3c3733);
+  background: -o-linear-gradient(#9b9592, #3c3733);
+  background: linear-gradient(#9b9592, #3c3733);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}

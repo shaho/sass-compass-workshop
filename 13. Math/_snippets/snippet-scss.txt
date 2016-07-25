@@ -1,0 +1,47 @@
+.wrapper {
+  width:80%;
+  margin:0 auto;
+  font-family: Georgia, "Times New Roman", Serif;
+}
+
+$base-font-size: 12px;
+$color-1: red;
+$color-2: blue;
+
+h1 {
+  font-size: 20px;
+}
+ol {
+  font: 16px/32px Helvetica; // No operation
+  li:first-child span{
+    font-size: $base-font-size + 12px; 
+  }
+  li:nth-child(2n) span {
+    font-size: $base-font-size / 2px;
+  }
+  li:nth-child(3) {
+    .color-1 {
+      color: $color-1;
+    }
+    .color-2 {
+      color: $color-2;
+    }
+    .new-color {
+      color: $color-1 + $color-2;
+    }
+  }
+  li:last-child{
+    span{
+      background-color: #666;
+      display: inline-block;
+      height: 25px;
+    }
+    // ((width / total columns) * columns / width) * 100%
+    .width-1 {
+       width: ((960 / 12) * 3 / 960) * 100%;
+    }
+    .width-2 {
+      width: ((960 / 12) * 8 / 960) * 100%;
+    }
+  }
+}

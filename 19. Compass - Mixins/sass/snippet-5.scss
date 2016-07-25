@@ -1,0 +1,7 @@
+@import "compass";
+
+p.three-cols {
+  @include column-count(4);
+  @include column-gap(100px);
+  @include column-rule(1px, dotted, lighten(blue, 14%));
+}

@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/styles.css">
+	<style>
+		.wrapper {
+			display: block;
+			width: 80%;
+			height: 100%;
+			margin: 4em auto;
+		}
+		.inner {
+			padding: 0.5em;
+		}
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+		<h1>@content directive</h1>
+		<div class="inner">
+			<p>We can take our media queries a step farther and create a mixin out of them. The @content directive in Sass allows you to pass entire sections of CSS rules back through a mixin.</p>
+
+			<article role="main">
+			  Main content
+			</article>
+
+			<aside role="complementary">
+			  Secondary content
+			</aside>
+		</div><!--end inner-->
+	</div><!--end wrapper-->
+</body>
+</html>

@@ -1,0 +1,64 @@
+.wrapper {
+  width:80%;
+  margin:0 auto;
+  font-family: Georgia, "Times New Roman", Serif;
+}
+
+h1 {
+  font-size: 20px; 
+}
+
+$error-color: #c15858;
+$caution-color: #f2cf2f;
+$success-color: #89a989;
+
+@mixin rounded-corners($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  -o-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin message-box($color) {
+  @extend %message;
+  background-color: $color;
+  border-color: darken($color, 30%);
+  color: darken($color, 40%);
+  .close {
+    color: darken($color, 30%);
+  }
+}
+
+%message {
+  float: left;
+  border-width: 1px;
+  border-style: solid;
+  @include rounded-corners(8px);
+  margin: 0 10px;
+  font-size: 14px;
+  padding: 20px;
+  position: relative;
+  width: 200px;
+  p {
+    margin: 0;
+  }
+  .close {
+    font-weight: bold;
+    position: absolute;
+      top: 5px;
+      right: 8px;
+  }
+}
+
+.error {
+  @include message-box($error-color);
+}
+
+.caution {
+  @include message-box($caution-color);
+}
+
+.success {
+  @include message-box($success-color);
+}

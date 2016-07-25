@@ -1,0 +1,57 @@
+.error, .caution, .success {
+  float: left;
+  border-width: 1px;
+  border-style: solid;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  border-radius: 8px;
+  margin: 0 10px;
+  font-size: 14px;
+  padding: 20px;
+  position: relative;
+  width: 200px;
+}
+.error p, .caution p, .success p {
+  margin: 0;
+}
+.error .close, .caution .close, .success .close {
+  font-weight: bold;
+  position: absolute;
+  top: 5px;
+  right: 8px;
+}
+
+.error {
+  background-color: #c15858;
+  background-image: linear-gradient(#cf7d7d, #a83e3e);
+  border-color: #5d2323;
+  box-shadow: #eac8c8 0 1px 0 inset;
+  color: #381515;
+}
+.error .close {
+  color: #5d2323;
+}
+
+.caution {
+  background-color: #f2cf2f;
+  background-image: linear-gradient(#f5da5f, #e0ba0e);
+  border-color: #806a08;
+  box-shadow: #fbf0bf 0 1px 0 inset;
+  color: #504305;
+}
+.caution .close {
+  color: #806a08;
+}
+
+.success {
+  background-color: #89a989;
+  background-image: linear-gradient(#a6bfa6, #6c936c);
+  border-color: #415841;
+  box-shadow: #e2eae2 0 1px 0 inset;
+  color: #2b3b2b;
+}
+.success .close {
+  color: #415841;
+}
