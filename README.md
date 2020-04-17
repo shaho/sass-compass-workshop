@@ -1,2 +1,2 @@
 # sass-compass-workshop
-Sass Compass Workshop 2014
+Sass Compass Workshop, Tehran 2014
