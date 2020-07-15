@@ -1,3 +1,3 @@
-# 🍾 sass-compass-workshop
-Sass Compass Workshop, Tehran 2014
+# 🍾 Sass Compass Workshop
+Sass Compass Workshop files, Tehran 2014
  
